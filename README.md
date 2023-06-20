@@ -1,0 +1,2 @@
+# qb-userscripts
+qutebrowser userscripts
