@@ -1,0 +1,5 @@
+#!/bin/bash
+
+filesafeurl=$(echo "$QUTE_URL" | sed "s+/+--+g")
+cat "$QUTE_TEXT" > "$QUTE_DOWNLOAD_DIR"/"$filesafeurl".saved.txt
+echo "message-warning 'saved as txt'" > $QUTE_FIFO

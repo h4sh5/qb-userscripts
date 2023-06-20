@@ -1,0 +1,5 @@
+#!/bin/bash
+
+filesafeurl=$(echo "$QUTE_URL" | sed "s+/+--+g")
+cat "$QUTE_HTML" > "$QUTE_DOWNLOAD_DIR"/"$filesafeurl".saved.html
+echo "message-warning 'saved as html'" > $QUTE_FIFO

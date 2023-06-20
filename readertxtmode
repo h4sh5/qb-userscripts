@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TMPFILE=$(mktemp -t XXXXXX.txt)
+cat "$QUTE_TEXT" > $TMPFILE
+echo "open $TMPFILE" > $QUTE_FIFO
